@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio and social profile hub for Kundan Rajoriya. Connect on Instagram, WhatsApp, and LinkedIn.">
+  <meta name="keywords" content="Kundan Rajoriya, portfolio, Instagram, WhatsApp, LinkedIn, content creator, digital enthusiast">
+  <meta name="author" content="Kundan Rajoriya">
+  <meta property="og:title" content="Kundan Rajoriya | Personal Portfolio">
+  <meta property="og:description" content="Content Creator | Digital Enthusiast | Let's Connect">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile/current/profile.jpg">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Kundan Rajoriya | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#hero" aria-label="Go to hero section">
+        <span class="brand-logo">
+          <img id="brandLogo" alt="KR logo" loading="eager">
+        </span>
+        <span class="brand-text">KR</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#social">Social</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Personal social hub</p>
+          <h1 data-profile="name">Kundan Rajoriya</h1>
+          <p class="tagline" data-profile="tagline">Content Creator | Digital Enthusiast | Let's Connect</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-link="instagram" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>
+              Follow Instagram
+            </a>
+            <a class="btn btn-ghost" data-link="whatsapp" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-card reveal">
+          <div class="profile-frame">
+            <img id="profilePhoto" alt="Profile photo" loading="eager">
+            <div class="avatar-placeholder" id="profilePlaceholder" aria-hidden="true">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="profile-meta">
+            <span>@<span data-profile="instagramUsername">kundann_rajoriya</span></span>
+            <a data-link="linkedin" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About me</p>
+        <h2>Digital space, one link away.</h2>
+      </div>
+      <article class="glass-card about-card reveal">
+        <p data-profile="bio">Welcome to my digital space! Follow me on Instagram for content about technology, creativity, learning, and life updates.</p>
+      </article>
+    </section>
+
+    <section class="section" id="social">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Connect</p>
+        <h2>Find me on your favorite platform.</h2>
+      </div>
+      <div class="social-grid">
+        <article class="social-card instagram reveal">
+          <i class="fa-brands fa-instagram"></i>
+          <h3>Instagram</h3>
+          <p>@<span data-profile="instagramUsername">kundann_rajoriya</span></p>
+          <a class="btn btn-card" data-link="instagram" target="_blank" rel="noopener">Follow on Instagram</a>
+        </article>
+        <article class="social-card whatsapp reveal">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <p>Direct message anytime.</p>
+          <a class="btn btn-card" data-link="whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </article>
+        <article class="social-card linkedin reveal">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <h3>LinkedIn</h3>
+          <p>Professional profile and updates.</p>
+          <a class="btn btn-card" data-link="linkedin" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Recent photos.</h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+      <p class="empty-gallery" id="emptyGallery">Gallery photos coming soon.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="glass-card contact-card reveal">
+        <p class="eyebrow">Connect With Me</p>
+        <h2>Feel free to connect with me on Instagram, WhatsApp, or LinkedIn.</h2>
+        <div class="contact-actions">
+          <a class="icon-link" data-link="instagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="icon-link" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a class="icon-link" data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> <span data-profile="name">Kundan Rajoriya</span>. All rights reserved.</p>
+    <div class="footer-icons">
+      <a data-link="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" data-link="whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img id="lightboxImage" alt="Gallery photo preview">
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
